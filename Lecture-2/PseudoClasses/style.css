@@ -1,0 +1,84 @@
+div {
+  height: 200px;
+  width: 400px;
+  background-color: palevioletred;
+  border: 2px solid black;
+}
+
+div:hover {
+  border-radius: 50%;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+a:active {
+  color: green;
+}
+
+input:focus {
+  background-color: greenyellow;
+}
+
+a[href="https://instagram.com"]:visited
+{
+  color: olive;
+}
+
+li:nth-of-type(4n + 5) {
+  background-color: greenyellow;
+}
+
+#special::first-letter {
+  font-size: 40px;
+  color: blue;
+}
+/* 
+a::after {
+  content: "♥";
+} */
+/* 
+h1:hover {
+  background-color: aqua;
+  border: 2px solid brown;
+  text-transform: uppercase;
+} */
+
+/* Starts with */
+a[href^="http"] {
+  color: green;
+  font-size: 30px;
+}
+
+/* Ends with */
+
+a[href$="in"] {
+  color: red;
+  border: 2px solid black;
+}
+
+/* Present Anywhere */
+
+a[href*="coding"] {
+  background-color: aqua;
+}
+
+#special {
+  color: olivedrab;
+}
+
+h1:nth-of-type(1) {
+  border: 2px solid black;
+  text-align: center;
+  background-color: #2a9d8f;
+}
+h1:nth-of-type(2) {
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgb(10, 200, 40);
+}
+
+h1:nth-of-type(3) {
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgba(10, 40, 200, 1);
+}

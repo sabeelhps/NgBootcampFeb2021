@@ -1,0 +1,36 @@
+/* Element Selector */
+h1 {
+  color: orange;
+  border: 2px solid green;
+  background-color: aqua;
+}
+
+/* Universal Selector */
+
+* {
+  border: 1px solid gray;
+}
+
+/* ID Selector */
+
+#special {
+  background-color: palevioletred;
+  text-transform: capitalize;
+}
+
+/* Class Selector */
+
+.one {
+  text-decoration: line-through;
+}
+
+/* Attribute Selector */
+
+a[href="http://google.com"]
+{
+  color: red;
+}
+
+input[type="text"] {
+  background-color: cornflowerblue;
+}

@@ -1,0 +1,30 @@
+/* Descendent Combinator */
+
+ul li a {
+  color: red;
+}
+
+article strong {
+  background-color: cornflowerblue;
+}
+
+/* Child Combinator */
+
+ol > li {
+  border-top: 2px solid blue;
+}
+
+/* Adjacent Selector */
+
+h4 + p {
+  color: palevioletred;
+  border: 2px solid black;
+  background-color: aqua;
+}
+
+/* General Sibling */
+
+h3 ~ p {
+  color: palevioletred;
+  text-decoration: overline;
+}
