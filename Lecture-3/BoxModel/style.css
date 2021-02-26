@@ -1,0 +1,29 @@
+p {
+  /* Dimensions-width or height */
+
+  width: 300px;
+
+  /* Border */
+
+  border: 2px solid green;
+
+  /* Margin */
+
+  /* margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-bottom: 20px; */
+  /* margin: 60px 30px 20px 40px; */
+
+  /* margin: 40px 30px; */
+  margin: 40px auto;
+
+  /* Padding */
+
+  /* padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 50px; */
+
+  padding: 20px 30px 40px 50px;
+}

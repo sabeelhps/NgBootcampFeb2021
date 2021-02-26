@@ -1,0 +1,40 @@
+#wrapper {
+  width: 600px;
+  height: 500px;
+  border: 2px solid black;
+  margin: 30px auto;
+}
+
+div {
+  width: 60%;
+  height: 40%;
+  border: 2px solid green;
+}
+
+article:first-of-type ul {
+  font-size: 30%;
+}
+
+article:first-of-type {
+  font-size: 100px;
+}
+
+article:nth-of-type(2) {
+  font-size: 20px;
+}
+
+html {
+  font-size: 10px;
+}
+
+ul {
+  /* font-size: 2em; */
+  font-size: 2rem;
+}
+
+#container {
+  border: 2px solid black;
+  background-color: cornflowerblue;
+  width: 70vw;
+  height: 80vh;
+}

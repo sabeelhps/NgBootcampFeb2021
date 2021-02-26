@@ -1,0 +1,16 @@
+div {
+  background-color: palevioletred;
+  border: 2px solid black;
+  margin: 20px;
+  font-size: 2.5rem;
+}
+
+div {
+  position: sticky;
+  top: 10px;
+}
+
+p::before {
+  /* content: "\2706"; */
+  content: "\1F605";
+}
