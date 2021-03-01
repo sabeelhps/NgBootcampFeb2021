@@ -1,0 +1,50 @@
+section {
+  margin: 30px auto;
+  width: 70%;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+section h1 {
+  font-size: 3.2rem;
+  text-align: center;
+
+  background-color: palevioletred;
+  /* border-style: solid;
+  border-width: 8px;
+  border-color: green; */
+  border: 8px solid green;
+  border-left: 8px solid red;
+  border-bottom: 8px solid blue;
+  border-radius: 15px 50px;
+}
+
+p {
+  border-left: 10px solid gray;
+  padding-left: 10px;
+}
+
+article {
+  width: 700px;
+  border: 1px solid #ccc;
+  margin: 30px auto;
+  height: 300px;
+  /* background-image: url(https://images.unsplash.com/photo-1516616370751-86d6bd8b0651?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60); */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  /* background-color: red; */
+  /* background-position: center; */
+}
+
+article img {
+  width: 700px;
+  height: 300px;
+
+  /* filter: grayscale(80%); */
+}
+
+article img:hover {
+  opacity: 0.5;
+  filter: grayscale(80%);
+  cursor: pointer;
+}

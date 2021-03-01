@@ -1,0 +1,26 @@
+article {
+  border: 1px solid #ccc;
+  width: 80vw;
+  margin: 30px auto;
+}
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p:hover {
+  overflow: scroll;
+  text-overflow: clip;
+  cursor: pointer;
+}
+
+div {
+  border: 2px solid black;
+  background-color: palevioletred;
+  margin: 20px;
+  padding: 10px;
+  max-width: 900px;
+  min-width: 600px;
+}

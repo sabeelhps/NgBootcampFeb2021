@@ -1,0 +1,17 @@
+li {
+  border: 1px solid #ccc;
+  width: 60%;
+  margin: 10px auto;
+}
+h1 {
+  text-align: center;
+}
+
+ul {
+  /* list-style-type: "\1F34D"; */
+  /* list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif"); */
+  /* list-style: ; */
+  /* list-style-position: inside; */
+  /* list-style: none; */
+  list-style: "\1F34D"outside;
+}

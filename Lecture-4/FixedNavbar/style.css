@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #343a40;
+  font-size: 2rem;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+li:last-of-type {
+  position: absolute;
+  right: 40px;
+}
