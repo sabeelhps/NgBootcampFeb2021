@@ -1,0 +1,44 @@
+div {
+  height: 300px;
+  width: 500px;
+  margin: 40px auto;
+}
+
+section {
+  perspective: 800px;
+}
+
+.side-a,
+.side-b {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.side-a {
+  background-color: palevioletred;
+  z-index: 1;
+}
+.side-b {
+  background-color: palegoldenrod;
+  transform: rotateY(180deg);
+  padding: 16px;
+}
+
+.side-b h2 {
+  text-align: center;
+}
+
+.side-a img {
+  height: 300px;
+  width: 500px;
+}
+
+.wrap {
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.wrap:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}

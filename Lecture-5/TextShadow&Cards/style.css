@@ -1,3 +1,4 @@
+/* Responsive Navbar using Flexboxes */
 * {
   margin: 0;
   padding: 0;
@@ -34,11 +35,16 @@ ul {
   }
 }
 
+/* Cards using transitions and transform */
+
 #main-img {
   height: 60vh;
   width: 100vw;
   border: 1px solid #ccc;
   background-color: cyan;
+  background-image: url(https://images.unsplash.com/photo-1529686342540-1b43aec0df75?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-origin: center;
 }
 
 .cards {
@@ -79,7 +85,7 @@ article button {
 }
 
 article {
-  transition: all 0.3s;
+  transition: all 0.2s;
   box-shadow: 0px 2px 3px rgba(104, 104, 104);
 }
 

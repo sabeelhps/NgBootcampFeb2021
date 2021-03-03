@@ -1,0 +1,36 @@
+section {
+  width: 80vw;
+  border: 1px solid #ccc;
+  margin: 50px auto;
+  padding: 16px;
+}
+
+section h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  /* border-width: 10px;
+  border-style: solid;
+  border-color: lightseagreen; */
+  /* border: 10px solid lightseagreen; */
+  padding: 20px 0px;
+  border-top: 10px solid lightsalmon;
+  border-left: 10px solid lightgreen;
+  border-bottom: 10px solid lightskyblue;
+  border-right: 10px solid lightslategray;
+  /* border-radius: 15px 50px 30px; */
+  border-radius: 20px;
+  background-color: lightskyblue;
+}
+
+p {
+  border-left: 10px solid #0096c7;
+  padding-left: 10px;
+}
+
+article {
+  width: 60vw;
+  height: 60vh;
+  border: 1px solid #ccc;
+  margin: 50px auto;
+  background-image: url(https://images.unsplash.com/photo-1515984977862-1c7201ef324d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+}
