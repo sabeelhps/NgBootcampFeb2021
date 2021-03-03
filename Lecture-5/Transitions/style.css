@@ -1,0 +1,18 @@
+div {
+  height: 200px;
+  width: 200px;
+  background-color: cyan;
+  border: 3px solid black;
+  margin: 50px auto;
+  /* transition-property: all; */
+  /* transition-duration: 2s; */
+  /* transition-delay: 900ms; */
+  /* transition-timing-function: cubic-bezier(0.65, 0.05, 0, 1.43); */
+  transition: border-radius 1s 1s ease-in, background-color 2s ease-out;
+}
+
+div:hover {
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+}

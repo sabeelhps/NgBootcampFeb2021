@@ -1,0 +1,37 @@
+section {
+  width: 90vw;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  margin: 10px;
+  background-color: cyan;
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+section:hover div {
+  margin-left: 1100px;
+}
+
+div:nth-of-type(1) {
+  transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+  transition-timing-function: ease-out;
+}
+div:nth-of-type(3) {
+  transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+div:nth-of-type(4) {
+  transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}

@@ -1,0 +1,51 @@
+article {
+  width: 75vw;
+  border: 1px solid #ccc;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+@media all and (max-width: 718px) {
+  p {
+    color: red;
+    font-size: ;
+  }
+  h1 {
+    color: palevioletred;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  h1 {
+    font-size: 2.5rem;
+    color: lightseagreen;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  h1 {
+    border: 1px solid green;
+    background-color: lightskyblue;
+    font-size: 3rem;
+  }
+}
+
+@media (orientation: portrait), (max-width: 1100px) {
+  h1 {
+    text-transform: uppercase;
+    background-color: cyan;
+    color: palevioletred;
+    font-size: 3rem;
+  }
+}
