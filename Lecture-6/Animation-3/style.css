@@ -1,0 +1,22 @@
+div {
+  height: 100px;
+  width: 100px;
+  border: 10px solid black;
+  border-top: 10px solid lightskyblue;
+  border-bottom: 10px solid palegreen;
+  border-radius: 50%;
+  animation: spin 500ms infinite linear;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
