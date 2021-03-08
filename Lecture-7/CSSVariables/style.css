@@ -1,0 +1,12 @@
+:root {
+  --section-ki-shadow: 0px 2px 3px rgb(104, 104, 104);
+  --section-ka-background: #fff;
+}
+
+section {
+  width: 40vw;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: var(--section-ki-shadow);
+  background-color: var(--section-ka-background);
+}
