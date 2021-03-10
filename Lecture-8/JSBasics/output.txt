@@ -1,0 +1,168 @@
+Number.MAX_SAFE_INTEGER
+9007199254740991
+Number.MIN_SAFE_INTEGER
+-9007199254740991
+
+-------------------
+
+typeof 1
+"number"
+typeof NaN
+"number"
+typeof 3.9856
+"number"
+
+--------------------
+
+let isRaining=true;
+undefined
+isRaining
+true
+isRaining=false;
+false
+
+----------------------
+
+let str='This is vivek's book';
+VM737:1 Uncaught SyntaxError: Unexpected identifier
+let str='This is vivek\'s book';
+undefined
+str
+"This is vivek's book"
+let anotherString="His name is 'vivek' ";
+undefined
+anotherString
+"His name is 'vivek' "
+let anotherString="His name is \"vivek\" ";
+undefined
+anotherString
+"His name is "vivek" "
+
+------------------------------------string methods-------------
+
+str
+"Hello World"
+str.length
+11
+
+let msg='Leave me alone I hate u plzzz';
+undefined
+msg
+"Leave me alone I hate u plzzz"
+msg.toUpperCase();
+"LEAVE ME ALONE I HATE U PLZZZ"
+msg
+"Leave me alone I hate u plzzz"
+
+let msg='Leave me alone I hate u plzzz';
+undefined
+msg
+"Leave me alone I hate u plzzz"
+msg.toLowerCase()
+"leave me alone i hate u plzzz"
+msg
+"Leave me alone I hate u plzzz"
+
+
+//////////////chaining of functions
+
+let msg='      Leave me alone I hate u plzzz    ';
+undefined
+msg
+"      Leave me alone I hate u plzzz    "
+msg.trim()
+"Leave me alone I hate u plzzz"
+let angryMsg=msg.trim().toUpperCase()
+undefined
+angryMsg
+"LEAVE ME ALONE I HATE U PLZZZ"
+msg
+"      Leave me alone I hate u plzzz    "
+
+
+
+------------------------------substr----------------
+
+let str = 'Hello World';
+undefined
+str
+"Hello World"
+str.substr(2);
+"llo World"
+str
+"Hello World"
+str.substr(4,6);
+"o Worl"
+
+let str = 'Hello World';
+undefined
+str.substr(-5);
+"World"
+str.substr(-5,3);
+"Wor"
+
+
+----------------------------------substring------------------
+
+let str = 'Hello World';
+undefined
+str.substring()
+"Hello World"
+str
+"Hello World"
+let ans = str.substring()
+undefined
+ans
+"Hello World"
+str.substring(2);
+"llo World"
+str.substring(2,9);
+"llo Wor"
+str.substring(2,11);
+"llo World"
+str.substring(-5,-2);
+""
+str.substring(-5,2);
+"He"
+str.substring(5,3);
+"lo"
+
+----------------------------------------------indexOf---------
+
+let msg='Leave me alone i hate u plzzz';
+undefined
+msg
+"Leave me alone i hate u plzzz"
+msg.indexOf('i');
+15
+msg.indexOf('hate');
+17
+let str = "Hello World";
+undefined
+str.indexOf('l');
+2
+str.indexOf('l',5);
+9
+str.indexOf('x',5);
+-1
+
+-----------------------------------replace---------
+
+let str = "Hello World";
+undefined
+str.replace('l','x');
+"Hexlo World"
+str.replaceAll('l','x');
+"Hexxo Worxd"
+
+---------------------------------------repeat()-----------
+
+let str = "Hello World";
+str
+"Hello World"
+str
+"Hello World"
+str.repeat(3);
+"Hello WorldHello WorldHello World"
+str
+"Hello World"

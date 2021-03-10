@@ -1,0 +1,32 @@
+let randomArray = [1,2,3,['a','b','c',["kartik","Mathur"]]];
+undefined
+randomArray[3];
+(4) ["a", "b", "c", Array(2)]
+randomArray[3][3];
+(2) ["kartik", "Mathur"]
+randomArray[3][3][0];
+"kartik"
+
+----------------
+
+colors.includes('green')
+true
+colors.includes('yellow')
+false
+
+
+-----------------------------------------
+
+(7) ["blue", "green", "orange", 1, 2, 3, 4]
+colors
+(4) ["red", "green", "pink", "purple"]
+let colorsCopy=colors
+undefined
+colorsCopy
+(4) ["red", "green", "pink", "purple"]0: "red"1: "green"2: "pink"3: "purple"4: "brown"5: "white"length: 6__proto__: Array(0)
+colorsCopy.push('brown','white');
+6
+colorsCopy
+(6) ["red", "green", "pink", "purple", "brown", "white"]
+colors
+(6) ["red", "green", "pink", "purple", "brown", "white"]
