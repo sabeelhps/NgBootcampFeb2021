@@ -1,0 +1,69 @@
+
+slice--------------------------
+
+let a=[1,2,3,4,5,6];
+undefined
+a
+(6) [1, 2, 3, 4, 5, 6]
+a.slice()
+(6) [1, 2, 3, 4, 5, 6]
+a
+(6) [1, 2, 3, 4, 5, 6]
+a.slice(2);
+(4) [3, 4, 5, 6]
+a.slice(2,5);
+(3) [3, 4, 5]
+
+
+a
+(6) [1, 2, 3, 4, 5, 6]
+a.slice(-4);
+(4) [3, 4, 5, 6]
+a
+(6) [1, 2, 3, 4, 5, 6]
+a.slice(-4,-2);
+(2) [3, 4]
+a.slice(5,3)
+[]
+
+splice-----------------------------------------------
+let colors=["blue","red","orange","green"];
+undefined
+colors
+(4) ["blue", "red", "orange", "green"]
+colors.splice(2,1);
+["orange"]
+colors
+(3) ["blue", "red", "green"]
+colors.splice(2,1,"Apple","Guava");
+["green"]
+colors
+(4) ["blue", "red", "Apple", "Guava"]
+colors.splice(1,0,"CARROT","REDISH");
+[]
+colors
+(6) ["blue", "CARROT", "REDISH", "red", "Apple", "Guava"]
+
+-----------------split---------------
+
+let url ='http://abc..com/song.mp3';
+undefined
+url
+"http://abc..com/song.mp3"
+url.split('/');
+(4) ["http:", "", "abc..com", "song.mp3"]
+let fileName=url.split('/').pop();
+undefined
+fileName
+"song.mp3"
+"We are learning array methods".split(' ');
+(5) ["We", "are", "learning", "array", "methods"]
+
+--------------------------------join------------
+
+let arr=[1,2,3];
+undefined
+arr.join('-');
+"1-2-3"
+arr.join('->');
+"1->2->3"

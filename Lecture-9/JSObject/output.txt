@@ -1,0 +1,23 @@
+person
+{firstName: "Kartik", age: 25, isAdult: true}
+person.firstName
+"Kartik"
+person.age
+25
+person.isAdult
+true
+person["firstName"];
+"Kartik"
+person["first"+"Name"];
+"Kartik"
+
+person
+{firstName: "Kartik", age: 25, isAdult: true}
+person.lastName="Mathur";
+"Mathur"
+person
+{firstName: "Kartik", age: 25, isAdult: true, lastName: "Mathur"}
+delete person.isAdult
+true
+person
+{firstName: "Kartik", age: 25, lastName: "Mathur"}
