@@ -1,0 +1,8 @@
+body {
+  background-color: aqua;
+}
+
+h1 {
+  color: red;
+  text-shadow: 0px 1px 3px #ccc;
+}

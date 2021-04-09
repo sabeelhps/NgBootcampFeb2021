@@ -1,0 +1,31 @@
+
+    <%- include("partials/header") %>
+    
+    <%- include("partials/navbar") %>
+
+    <h1>This is my Random Number <%= randomNum %> </h1>
+
+    <%if(randomNum%2!==0){%>
+        <h2>Num is - ODD</h2>
+    <%}else{%>
+        <h2>Num is - EVEN</h2>
+    <%}%>
+
+
+    <ol>
+        <%for(let i=0;i<10;i++){%>
+            <li>Hello World</li>
+        <%}%>
+    </ol>
+   
+
+    <ul>
+        <%for(let item of todos){%>
+            
+            <li><%= item %></li>
+        
+        <%}%>
+    </ul>
+
+    <%- include("partials/footer") %>
+   
