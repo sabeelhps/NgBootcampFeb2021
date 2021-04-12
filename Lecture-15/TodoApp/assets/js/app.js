@@ -26,7 +26,7 @@ $('input[type="text"]').keypress(function (e) {
         const todoText = $(this).val();
         console.log(todoText);
 
-        const todo = `<li><span>X</span> ${todoText}</li>`;
+        const todo = `<li><span><i class="far fa-trash-alt"></i></span> ${todoText}</li>`;
 
         $('ul').append(todo);
     }
