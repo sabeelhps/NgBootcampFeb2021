@@ -1,0 +1,19 @@
+{
+  "name": "RestfulRouting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.7",
+    "uuid": "^8.3.2"
+  }
+}
