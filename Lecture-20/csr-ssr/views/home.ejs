@@ -10,6 +10,13 @@
 
 
     <h1>SSR</h1>
+
+    <form action="/todo" method="POST">
+        <input type="text" name="todo">
+        <button>Add Todo</button>
+    </form>
+
+
     <ul>
     <%for(let item of todos){%>
         <li><%= item %></li>

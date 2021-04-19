@@ -1,0 +1,28 @@
+[
+    {
+        "id":1,
+        "name":"Kartik",
+        "text":"djhsafbklek;fwejvhbfj",
+        "comments":[
+            "Worst Product",
+            "Nice"
+        ]
+    },
+    {
+        "id":2,
+        "name":"Prateek",
+        "text":"asdjhadhsgvhfbjdnksdf",
+        "comments":[
+            "This is a awesome blog"
+        ]
+    }
+    ,{
+        "id":3,
+        "name":"Arnav",
+        "text":"dhajj,fnsdgfjhbjnk",
+        
+    },
+    {
+
+    }
+]
