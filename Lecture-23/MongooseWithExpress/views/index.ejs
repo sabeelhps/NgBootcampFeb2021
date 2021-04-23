@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <div id="container">
+    <a href="/products/new">Add Product</a>
+    <%for(let item of products){%>
+        <div class="products">
+            <h2>Name:<%= item.name %></h2>
+            <h4>Price $ : <%= item.price %></h4>
+            <p><%=item.desc.substring(0,90)%>...</p>
+            <a href="/products/<%=item._id%>">Show</a>
+        </div>
+    <%}%>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+    <link rel="stylesheet" href="/app.css">
+
+</head>
+<body>
+
+
+    <div id="container">
+        <a href="/products">Go Back</a>
+       
+            <div class="products">
+                <h2>Name:<%= product.name %></h2>
+                <h4>Price $ : <%= product.price %></h4>
+                <p><%=product.desc %></p>
+
+                <a href="/products/<%=product._id%>/edit">Edit</a>
+            </div>
+       
+    </div>
+  
+</body>
+</html>
