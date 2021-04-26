@@ -3,13 +3,17 @@ const app = express();
 const mongoose = require('mongoose');
 const path = require('path');
 const seedDB = require('./seed');
+const methodOverride = require('method-override');
 
+
+// Routes
 const productRoutes = require('./routes/product');
 
 mongoose.connect('mongodb://localhost:27017/shopApp',
     {
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
+        useFindAndModify:false
     })
     .then(() => {
         console.log("DB Connected");
@@ -25,18 +29,15 @@ mongoose.connect('mongodb://localhost:27017/shopApp',
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(path.join(__dirname, '/public')));
-
-
-app.use(productRoutes);
-
+app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride('_method'))
 
 app.get('/', (req, res) => {
     
     res.send("LANDING PAGE");
 })
 
-
-
+app.use(productRoutes);
 
 
 app.listen(3000, () => {
