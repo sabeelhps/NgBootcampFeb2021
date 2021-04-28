@@ -1,0 +1,7 @@
+.products {
+  margin: 5px auto;
+}
+.products .card img {
+  padding: 15px;
+  height: 220px;
+}
