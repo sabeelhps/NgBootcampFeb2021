@@ -88,6 +88,7 @@ router.delete('/products/:id', async (req, res) => {
 
     try {
         await Product.findByIdAndDelete(req.params.id);
+        req.flash('success', 'Deleted the product successfully');
         res.redirect('/products');
     }
     catch (e) {
@@ -113,6 +114,7 @@ router.post('/products/:id/review', async (req, res) => {
         await review.save();
         await product.save();
 
+        req.flash('success','Successfully added your review!')
         res.redirect(`/products/${req.params.id}`);
     }
     catch (e) {
@@ -125,7 +127,7 @@ router.post('/products/:id/review', async (req, res) => {
 
 
 router.get('/error', (req, res) => {
-    res.status(500).render('error');
+    res.status(404).render('error');
 })
 
 
