@@ -7,9 +7,14 @@ const Review = require('../models/review');
 // Display all the products
 router.get('/products', async(req, res) => {
     
-    const products=await Product.find({});
-
-    res.render('products/index',{products});
+    try {
+        const products=await Product.find({});
+        res.render('products/index',{products}); 
+    } catch (e) {
+        console.log("Something Went Wrong");
+        req.flash('error', 'Cannot Find Products');
+        res.render('error');
+    }
 })
 
 
@@ -22,21 +27,30 @@ router.get('/products/new', (req, res) => {
 // Create New Product
 router.post('/products', async(req, res) => {
 
-
-    await Product.create(req.body.product);
-
-    res.redirect('/products');
+    try {
+        await Product.create(req.body.product);
+        req.flash('success', 'Product Created Successfully');
+        res.redirect('/products');
+    }
+    catch (e) {
+        console.log(e.message);
+        req.flash('error', 'Cannot Create Products,Something is Wrong');
+        res.render('error');
+    } 
 });
 
 
 // Show particular product
 router.get('/products/:id', async(req, res) => {
-    
-    const product=await Product.findById(req.params.id).populate('reviews');
-
-   
-
-    res.render('products/show', { product });
+    try {
+        const product=await Product.findById(req.params.id).populate('reviews');
+        res.render('products/show', { product});
+    }
+    catch (e) {
+        console.log(e.message);
+        req.flash('error', 'Cannot find this Product');
+        res.redirect('/error');
+    }
 })
 
 // Get the edit form
@@ -52,6 +66,7 @@ router.patch('/products/:id', async(req, res) => {
     
     await Product.findByIdAndUpdate(req.params.id, req.body.product);
 
+    req.flash('success', 'Updated Successfully!');
     res.redirect(`/products/${req.params.id}`)
 })
 
@@ -79,6 +94,11 @@ router.post('/products/:id/review', async (req, res) => {
     await product.save();
 
     res.redirect(`/products/${req.params.id}`);
+})
+
+
+router.get('/error', (req, res) => {
+    res.status(500).render('error');
 })
 
 
