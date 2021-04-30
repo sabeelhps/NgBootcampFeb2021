@@ -56,25 +56,45 @@ router.get('/products/:id', async(req, res) => {
 // Get the edit form
 router.get('/products/:id/edit', async(req, res) => {
 
-    const product=await Product.findById(req.params.id);
-
-    res.render('products/edit',{product});
+    try {
+        const product=await Product.findById(req.params.id);
+        res.render('products/edit',{product});
+    }
+    catch (e) {
+        console.log(e.message);
+        req.flash('error', 'Cannot Edit this Product');
+        res.redirect('/error');
+    }
 })
 
 // Upadate the particular product
 router.patch('/products/:id', async(req, res) => {
     
-    await Product.findByIdAndUpdate(req.params.id, req.body.product);
-
-    req.flash('success', 'Updated Successfully!');
-    res.redirect(`/products/${req.params.id}`)
+    try {
+        await Product.findByIdAndUpdate(req.params.id, req.body.product);
+        req.flash('success', 'Updated Successfully!');
+        res.redirect(`/products/${req.params.id}`) 
+    }
+    catch (e) {
+        console.log(e.message);
+        req.flash('error', 'Cannot update this Product');
+        res.redirect('/error');
+    }
 })
 
 
 // Delete a particular product
 router.delete('/products/:id', async (req, res) => {
-    await Product.findByIdAndDelete(req.params.id);
-    res.redirect('/products');
+
+    try {
+        await Product.findByIdAndDelete(req.params.id);
+        res.redirect('/products');
+    }
+    catch (e) {
+        console.log(e.message);
+        req.flash('error', 'Cannot delete this Product');
+        res.redirect('/error');
+    }
 })
 
 
@@ -84,16 +104,23 @@ router.delete('/products/:id', async (req, res) => {
 
 router.post('/products/:id/review', async (req, res) => {
     
-    const product = await Product.findById(req.params.id);
-    const review = new Review(req.body);
-    console.log(review);
+    try {
+        const product = await Product.findById(req.params.id);
+        const review = new Review(req.body);
 
-    product.reviews.push(review);
+        product.reviews.push(review);
 
-    await review.save();
-    await product.save();
+        await review.save();
+        await product.save();
 
-    res.redirect(`/products/${req.params.id}`);
+        res.redirect(`/products/${req.params.id}`);
+    }
+    catch (e) {
+        console.log(e.message);
+        req.flash('error', 'Cannot add review to this Product');
+        res.redirect('/error');
+    }
+    
 })
 
 
