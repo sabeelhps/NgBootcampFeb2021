@@ -21,3 +21,8 @@
   margin: 10px auto;
   border-radius: 10px;
 }
+
+.navbar-brand {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.1em;
+}

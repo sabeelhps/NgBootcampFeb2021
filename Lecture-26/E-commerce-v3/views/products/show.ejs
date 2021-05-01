@@ -7,7 +7,7 @@
 
   
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-3">
             <div class="card" style="width: 25rem;">
                 <img src="<%=product.img%>" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -26,9 +26,10 @@
                 </div>
               </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" >
+           
             <h1>Leave a Review</h1>
-            <form class="validated-form" action="/products/<%=product._id%>/review" method="POST" style="max-width:70%;" novalidate>
+            <form  class="validated-form" action="/products/<%=product._id%>/review" method="POST" style="max-width:70%;" novalidate>
                 <div class="mb-3">
                     <label for="rating" class="form-label">Rating</label>
                     <input type="range" class="form-range" min="0" max="5" name="rating" id="rating">
@@ -44,7 +45,7 @@
                
                 <button type="submit" class="btn btn-success">Submit</button>
               </form>
-
+            
               <div class="mb-3 mt-3">
                 <%for(let review of product.reviews){%>
 
