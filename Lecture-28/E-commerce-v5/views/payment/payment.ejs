@@ -1,0 +1,48 @@
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+
+
+
+<div class="container" style="margin-top:5rem;width:80vw;margin-bottom: 11rem;">
+
+            <form class="validated-form" action="#" method="POST" style="max-width:70%;margin:10px auto" novalidate>
+                <h6 class="display-6">Add Your Payment Info</h6>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Product Name"  required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="card" class="form-label">Card number</label>
+                  <input type="number" class="form-control" id="card" placeholder="Enter your 12 digit card number" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Expiry Date</label>
+                    <input type="date" class="form-control" id="card" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+               
+        
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" cols="30" rows="2" required></textarea>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+               
+                <button type="submit" class="btn btn-success">Proceed</button>
+              </form>
+        
+   
+</div>
+
+
+<%- include("../partials/footer")%>
