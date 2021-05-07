@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            padding: 16px;
+            margin: 10px auto;
+            width:500px;
+            box-shadow: 0px 1px 2px gray;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Show</h1>
+    <a href="/blogs">All Blogs</a>
+    <div>
+        <h2><%=blog.title%></h2>
+        <p><%=blog.body%></p>
+        <a href="/blogs/<%=blog.id%>/edit">Edit</a>
+        <form method="POST" action="/blogs/<%=blog.id%>?_method=DELETE">
+            <button>Delete</button>
+        </form>
+    </div>
+    
+</body>
+</html>
