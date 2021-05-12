@@ -1,0 +1,5 @@
+1.Integrate Payment Gateway using PayU -(https://medium.com/@mayankgupta1338/node-js-express-js-payumoney-payment-integration-32d3058c714)
+2.Add the User profile feature -(past orders etc.)
+3.Upload Image using multer to cloudinary.
+4.Google,Facebook Login
+5.Add Icon to the tab

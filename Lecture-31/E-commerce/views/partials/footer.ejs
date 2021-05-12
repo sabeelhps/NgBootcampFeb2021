@@ -1,0 +1,36 @@
+
+
+   <footer class="footer py-3 mt-auto text-white text-center" style="background-color: #0077b6;width: 100%;">
+      <div class="container">
+          <span>&copy; Shopping-cart 2021</span>
+      </div>
+  </footer>
+
+
+    <script>
+        (function () {
+        'use strict'
+      
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.validated-form')
+      
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+      
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+      </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+</html>
