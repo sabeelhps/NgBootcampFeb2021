@@ -1,0 +1,21 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "test": "mocha",
+    "cover": "nyc --reporter=html mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7",
+    "nyc": "^15.1.0",
+    "request": "^2.88.2"
+  }
+}
