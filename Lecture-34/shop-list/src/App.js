@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import Person from './Person';
-
+import React, { Component } from 'react'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Person />
+        
       </div>
-    );
+    )
   }
 }
-
 export default App;
